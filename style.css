@@ -58,7 +58,9 @@ body{
 
 .hero{
   height:100vh;
-  background:linear-gradient(rgba(46,125,50,.85),rgba(46,125,50,.85));
+  background:
+  linear-gradient(rgba(46,125,50,.75),rgba(46,125,50,.75)),
+  url('./assets/hero-bg.jpg') center/cover no-repeat;
   display:flex;
   justify-content:center;
   align-items:center;
