@@ -1,33 +1,35 @@
-// Menú hamburguesa
-const toggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
 
-toggle.addEventListener('click', () => {
-  menu.classList.toggle('show');
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
 });
 
-// CTA
-document.getElementById('cta-btn').addEventListener('click', () => {
-  alert("¡Gracias por comprometerte! Recibirás guía de acciones");
-});
+function joinMessage(){
+    alert("¡Gracias por comprometerte! Recibirás guía de acciones");
+}
 
-// Contador dinámico
-let count = 0;
+document.getElementById("joinBtn").addEventListener("click", joinMessage);
+document.getElementById("joinBtn2").addEventListener("click", joinMessage);
+
+let counter = 0;
+
 setInterval(() => {
-  let random = Math.floor(Math.random() * 150) + 50;
-  count += random;
-  document.getElementById('counter').innerText = count + " kg";
+    const random = Math.floor(Math.random() * 151) + 50;
+    counter += random;
+
+    document.getElementById("plasticCounter").textContent =
+        `${counter} kg`;
 }, 2000);
 
-// Scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-    }
-  });
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("active");
+        }
+    });
 });
 
-reveals.forEach(el => observer.observe(el));
+document.querySelectorAll(".reveal").forEach(section=>{
+    observer.observe(section);
+});

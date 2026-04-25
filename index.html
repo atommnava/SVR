@@ -4,82 +4,234 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Green Goal 2026</title>
+
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <div class="logo">Green Goal 2026</div>
-  <div class="menu-toggle" id="menu-toggle">☰</div>
-  <nav>
-    <ul id="menu">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Acciones</a></li>
-      <li><a href="#">Impacto</a></li>
-    </ul>
-  </nav>
+<header class="header">
+    <div class="container nav-container">
+        <div class="logo">Green Goal 2026</div>
+
+        <nav class="nav" id="nav">
+            <a href="#about">Nosotros</a>
+            <a href="#challenge">Problema</a>
+            <a href="#model">Modelo</a>
+            <a href="#impact">Impacto</a>
+            <a href="#ods">ODS</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+    </div>
 </header>
 
 <section class="hero">
-  <h1>Un Mundial sin plásticos de un solo uso</h1>
-  <p>Transformemos el evento deportivo más grande del mundo en un ejemplo global de sostenibilidad.</p>
-  <button class="btn" id="cta-btn">Quiero sumarme</button>
+    <div class="hero-content">
+        <h1>Un Mundial sin plásticos de un solo uso</h1>
+        <p>
+            Una solución inteligente para reducir residuos
+            mediante vasos reutilizables con tecnología QR.
+        </p>
+
+        <button id="joinBtn">Quiero sumarme</button>
+    </div>
+</section>
+
+<section id="about" class="section reveal">
+    <div class="container">
+        <h2>Quiénes somos</h2>
+        <p>
+            Somos Green Goal 2026, una iniciativa enfocada en transformar
+            la experiencia del Mundial mediante un sistema de reutilización
+            inteligente de vasos con QR, reduciendo residuos y promoviendo
+            consumo responsable.
+        </p>
+    </div>
+</section>
+
+<section id="challenge" class="section reveal dark">
+    <div class="container">
+        <h2>El desafío ambiental</h2>
+
+        <div class="grid-3">
+
+            <div class="card">
+                <h3>Residuos masivos</h3>
+                <p>Millones de vasos desechables utilizados durante el torneo.</p>
+            </div>
+
+            <div class="card">
+                <h3>Contaminación</h3>
+                <p>Impacto directo en espacios públicos y áreas naturales.</p>
+            </div>
+
+            <div class="card">
+                <h3>Huella de carbono</h3>
+                <p>Producción y desecho elevan emisiones contaminantes.</p>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <section class="section reveal">
-  <h2>Impacto actual</h2>
-  <div class="grid stats">
-    <div class="card">40,000 toneladas de plástico en torneos anteriores</div>
-    <div class="card">3 millones de vasos desechables por estadio</div>
-    <div class="card">70% termina en vertederos</div>
-  </div>
+    <div class="container">
+        <h2>Nuestra Meta</h2>
+
+        <div class="grid-3">
+
+            <div class="goal-card">
+                <h3>Reducir residuos</h3>
+            </div>
+
+            <div class="goal-card">
+                <h3>Incentivar participación</h3>
+            </div>
+
+            <div class="goal-card">
+                <h3>Imagen sustentable</h3>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="model" class="section reveal dark">
+    <div class="container">
+        <h2>Modelo de negocio</h2>
+
+        <div class="timeline-flow">
+
+            <div class="flow-step">Compra bebida</div>
+            <div class="flow-step">Recibe vaso QR</div>
+            <div class="flow-step">Usa y participa</div>
+            <div class="flow-step">Devuelve vaso</div>
+            <div class="flow-step">Recibe recompensas</div>
+
+        </div>
+
+        <div class="business-grid">
+
+            <div class="business-card">
+                <h3>Ingresos principales</h3>
+                <ul>
+                    <li>Tarifa operativa por reutilización</li>
+                    <li>Publicidad en vasos patrocinados</li>
+                    <li>Vasos no devueltos</li>
+                    <li>Patrocinios</li>
+                    <li>Licenciamiento futuro</li>
+                </ul>
+            </div>
+
+            <div class="business-card">
+                <h3>Tecnología + Monetización</h3>
+                <p>
+                    Cada vaso integra un QR único para rastreo,
+                    devoluciones y recompensas.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="impact" class="section reveal">
+    <div class="container">
+        <h2>Beneficios e Impacto Medible</h2>
+
+        <div class="grid-2">
+
+            <div class="metric-card">
+                <h3>Menos basura</h3>
+                <p>Reducción significativa de residuos.</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>Sistema seguro</h3>
+                <p>QR único evita fraude.</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>Incentivo real</h3>
+                <p>Depósito reembolsable.</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>Imagen positiva</h3>
+                <p>Fortalece reputación sustentable.</p>
+            </div>
+
+        </div>
+
+        <div class="live-metrics">
+
+            <div>
+                <h3>Residuos evitados</h3>
+                <span id="plasticCounter">0 kg</span>
+            </div>
+
+            <div>
+                <h3>Tasa devolución</h3>
+                <span>70–90%</span>
+            </div>
+
+            <div>
+                <h3>Control del sistema</h3>
+                <span>100%</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="ods" class="section reveal dark">
+    <div class="container">
+        <h2>Compromiso ODS</h2>
+
+        <div class="grid-2">
+
+            <div class="card">
+                <h3>ODS 12</h3>
+                <p>Producción y consumo responsables.</p>
+            </div>
+
+            <div class="card">
+                <h3>ODS 13</h3>
+                <p>Trabajo decente y crecimiento económico.</p>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <section class="section reveal">
-  <h2>Acciones clave</h2>
-  <div class="grid actions">
-    <div class="card">Vasos reutilizables con QR</div>
-    <div class="card">Estaciones de agua</div>
-    <div class="card">Botellas de aluminio</div>
-    <div class="card">Prohibición de plásticos</div>
-    <div class="card">Apps de gestión de residuos</div>
-  </div>
+    <div class="container">
+        <h2>Diagnóstico circular</h2>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>Materiales</h3>
+                <p>Uso de vasos biodegradables reutilizables.</p>
+            </div>
+
+            <div class="card">
+                <h3>Ciclo de vida</h3>
+                <p>Control total del proceso de uso y retorno.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="section reveal">
-  <h2>Línea de tiempo</h2>
-  <div class="timeline">
-    <div><strong>Abril 2025:</strong> Lanzamiento de campaña global</div>
-    <div><strong>Enero 2026:</strong> Proveedores certificados</div>
-    <div><strong>Junio 2026:</strong> Operación sin plásticos</div>
-  </div>
-</section>
-
-<section class="section reveal">
-  <h2>Sedes sostenibles</h2>
-  <div class="grid actions">
-    <div class="card">MetLife Stadium</div>
-    <div class="card">Estadio Azteca</div>
-    <div class="card">BC Place</div>
-  </div>
-</section>
-
-<section class="section reveal">
-  <h2>Impacto en tiempo real</h2>
-  <div class="counter" id="counter">0 kg</div>
-</section>
-
-<section class="section reveal">
-  <h2>Testimonio</h2>
-  <div class="card">
-    “Este Mundial puede cambiar la historia del deporte y del planeta.”
-    <br><strong>- Jugador Internacional</strong>
-  </div>
+<section class="cta reveal">
+    <h2>Un Mundial más limpio comienza contigo</h2>
+    <button id="joinBtn2">Únete ahora</button>
 </section>
 
 <footer>
-  <p>ONGs aliadas | #GreenGoal2026 #PlasticFreeWorldCup</p>
+    <p>#GreenGoal2026 #PlasticFreeWorldCup</p>
 </footer>
 
 <script src="script.js"></script>
